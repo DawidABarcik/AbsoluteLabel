@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbsoluteLabel", "AbsoluteLabel\AbsoluteLabel.csproj", "{1DEDE9A1-2F31-4284-A3E3-C3DF0C30328F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1DEDE9A1-2F31-4284-A3E3-C3DF0C30328F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DEDE9A1-2F31-4284-A3E3-C3DF0C30328F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DEDE9A1-2F31-4284-A3E3-C3DF0C30328F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DEDE9A1-2F31-4284-A3E3-C3DF0C30328F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6168E64D-4098-4925-BB61-9B7CC7671108}
+	EndGlobalSection
+EndGlobal

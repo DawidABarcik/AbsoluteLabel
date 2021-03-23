@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "AbsoluteLabel";
+}
+<div class="container">
+    <div class="jumbotron">Search Result</div>
+</div>
+
+
+@foreach (var result in Model.results)
+{
+    <div class="row">
+        <p><img class="art-image " src="@result.artworkUrl100"
+        style="text-align:left" class="trackName">@result.trackName - @result.artistName - @result.kind
+        <br style="text-align:left" class="releaseDate">Release Date - @result.releaseDate
+        </p>
+    </div>
+
+}

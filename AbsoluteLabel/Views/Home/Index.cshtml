@@ -1,0 +1,93 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+
+
+@*{
+        List<SelectListItem> listItems = new List<SelectListItem>();
+        listItems.Add(new SelectListItem
+        {
+            Text = "movie",
+            Value = "movie"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "podcast",
+            Value = "podcast",
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "music",
+            Value = "music"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "musicVideo",
+            Value = "musicVideo"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "audiobook",
+            Value = "audiobook"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "tvShow",
+            Value = "tvShow"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "software",
+            Value = "software"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "ebook",
+            Value = "ebook"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "software",
+            Value = "software"
+        });
+        listItems.Add(new SelectListItem
+        {
+            Text = "all",
+            Value = "all"
+        });
+    }*@
+
+@using (Html.BeginForm("Search", "Home", FormMethod.Get))
+{
+
+    <div class="row form_input">
+        <input type="text" class="sub-txt" name="searchTerm" placeholder="Type here" required />
+    </div>
+    <div class="row form_button">
+        <button type="submit" class="sub-btn">Search!</button>
+    </div>
+}
+Select Type:
+    <select id="ddlType" name="Type" onchange="SetSelectedText(this)">
+        <option value="all">all</option>
+        <option value="movie">movie</option>
+        <option value="music">music</option>
+        <option value="musicVideo">musicVideo</option>
+        <option value="audiobook">audiobook</option>
+        <option value="tvShow">tvShow</option>
+        <option value="software">software</option>
+        <option value="ebook">ebook</option>
+        <option value="software">software</option>
+    </select>
+    <input type="hidden" id="hfTypeName" name="TypeName" />
+    <script type="text/javascript">
+        function SetSelectedText(ddlType) {
+            var selectedText = ddlType.options[ddlType.selectedIndex].innerHTML;
+            document.getElementById("hfType").value = selectedText;
+        }
+    </script>
+    <asp:Button Text="Submit" OnClick="Submit" />
+
+
